@@ -52,7 +52,7 @@ def fermat_test(n):
     return (a ** n) % n == a
 
 
-def fast_prime(n, times=1):
+def fast_prime(n, times):
     if n == 2:
         return True
     if n < 2:
@@ -65,7 +65,7 @@ def fast_prime(n, times=1):
         return False
 
 
-print("O(log(n)) -> ", fast_prime(13))
+print("O(log(n)) -> ", fast_prime(13, 5))
 
 # ___________________________________________________________________
 

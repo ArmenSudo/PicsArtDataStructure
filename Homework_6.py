@@ -1,7 +1,10 @@
 arr = [ 1, 2, 3, 4, 5, -6, 1, 1, 2, 1]
 
 def contain(data, val):
-    return val in data
+    for x in data:
+        if x == val:
+            return True
+    return False
 
 def pop(data, i=None):
     if i == None:
